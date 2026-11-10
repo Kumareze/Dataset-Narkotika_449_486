@@ -43,27 +43,10 @@ Repositori ini berisi dataset putusan perkara **Narkotika dan Psikotropika** dar
 | `Barang Bukti` | Ringkasan barang bukti yang tercatat |
 | `Amar Putusan` | Catatan amar putusan |
 
-## Reproduksibilitas
-
-Script akuisisi yang digunakan adalah `scrape_pn_bekasi_santai.py`. Script menjalankan akses secara bertahap dengan jeda, menangani verifikasi manual apabila muncul, menyimpan cache, dan mengunduh PDF satu per satu.
-
-```bash
-uv run --with pandas --with openpyxl --with playwright python scrape_pn_bekasi_santai.py
-```
-
-Kebutuhan utama:
-
-- Python
-- Playwright
-- pandas
-- openpyxl
-- Microsoft Edge/Chromium
 
 ## Catatan Etika dan Batasan
 
 1. Data hanya digunakan untuk keperluan akademik.
-2. Akses dilakukan secara perlahan dan tidak dimaksudkan untuk membebani server.
-3. Verifikasi Cloudflare, apabila muncul, diselesaikan secara manual oleh pengguna.
 4. Metadata `Barang Bukti` merupakan ekstraksi berbasis pola halaman dan perlu dibandingkan kembali dengan PDF sumber sebelum digunakan sebagai ground truth penelitian.
 5. Pembaca perlu memeriksa status hukum dan keutuhan setiap dokumen langsung pada sumber resmi.
 
