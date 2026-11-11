@@ -2,8 +2,7 @@
 
 <p align="center">
   Dataset 50 putusan pidana khusus <b>Narkotika dan Psikotropika</b> Pengadilan Negeri Bekasi tahun 2025,<br/>
-  diambil dari Direktori Putusan Mahkamah Agung Republik Indonesia untuk riset Temu Kembali Informasi,<br/>
-  beserta notebook crawler, ekstraksi, dan sistem pencarian untuk UTS Temu Kembali Informasi.
+  diambil dari Direktori Putusan Mahkamah Agung Republik Indonesia untuk riset Temu Kembali Informasi.
 </p>
 
 <p align="center">
@@ -23,7 +22,6 @@
 - [Anggota Kelompok](#anggota-kelompok)
 - [Struktur Repositori](#struktur-repositori)
 - [Mulai Cepat](#mulai-cepat)
-- [Notebook Soal 3 dan 4](#notebook-soal-3-dan-4)
 - [Isi Overview.xlsx](#isi-overviewxlsx)
 - [Statistik Dataset](#statistik-dataset)
 - [Metodologi Akuisisi](#metodologi-akuisisi)
@@ -61,25 +59,22 @@ Nama repositori mengikuti ketentuan `Dataset-Narkotika_<3 digit NIM anggota 1>_<
 ```text
 Dataset-Narkotika_449_486/
 ├── Dataset/
-│   └── Narkotika.zip                     # 50 PDF putusan, nama file: <nomor>_Pid.Sus_<tahun>_PN Bks.pdf
+│   └── Narkotika.zip      # 50 PDF putusan, nama file: <nomor>_Pid.Sus_<tahun>_PN Bks.pdf
 ├── Overview/
-│   └── Overview.xlsx                     # Ringkasan 50 putusan (3 sheet)
-├── notebooks/
-│   └── UTS_IR_Narkotika_449_486.ipynb    # Soal 3 (crawler, ekstraksi) dan Soal 4 (indexing, pencarian)
-├── docs/
-│   ├── state_of_the_art.pdf              # Soal 1
-│   └── relay.md                          # Panduan membuat relay crawler
-├── pyproject.toml, uv.lock               # Dependensi untuk menjalankan notebook di lokal
+│   └── Overview.xlsx      # Ringkasan 50 putusan (3 sheet)
+├── notebooks/             # Notebook Soal 3 dan 4 beserta panduannya
+├── docs/                  # Laporan Soal 1 dan panduan relay
 └── README.md
 ```
+
+Nama file PDF diturunkan dari nomor putusan dengan mengganti `/` menjadi `_`. Contoh: `107/Pid.Sus/2025/PN Bks` disimpan sebagai `107_Pid.Sus_2025_PN Bks.pdf`.
+
+### Berkas Lain di Repositori
 
 | Soal | Berkas |
 |---|---|
 | 1 | [docs/state_of_the_art.pdf](docs/state_of_the_art.pdf) |
-| 2 | `Dataset/`, `Overview/`, dan README ini |
-| 3 dan 4 | [notebooks/UTS_IR_Narkotika_449_486.ipynb](notebooks/UTS_IR_Narkotika_449_486.ipynb) |
-
-Nama file PDF diturunkan dari nomor putusan dengan mengganti `/` menjadi `_`. Contoh: `107/Pid.Sus/2025/PN Bks` disimpan sebagai `107_Pid.Sus_2025_PN Bks.pdf`.
+| 3 dan 4 | [notebooks/](notebooks/README.md), memakai dataset ini sebagai cadangan crawl, korpus, dan ground truth |
 
 ## Mulai Cepat
 
@@ -115,50 +110,6 @@ Contoh analisis cepat:
 metadata.groupby("Jenis Narkotika")["Pidana Penjara (bulan)"].describe()
 overview[overview["Barang Bukti"].str.contains("ganja", case=False)]
 ```
-
-## Notebook Soal 3 dan 4
-
-Notebook mengerjakan dua soal berurutan. Soal 3 meng-crawl 50 putusan dari Direktori Putusan, menyimpan PDF dan TXT, lalu mengekstrak atribut ke CSV. Soal 4 membangun index posisional dari `Narkotika.zip` dan membandingkan Boolean, TF-IDF, BM25, dan BM25F. Dataset ini dipakai sebagai cadangan PDF bila crawl gagal, korpus Soal 4, dan ground truth evaluasi.
-
-### Menjalankan
-
-Di Colab: unggah notebook, lalu pilih **Runtime > Run all**. Dataset diunduh dari repositori ini; jika gagal, notebook meminta unggahan manual.
-
-Di lokal (Python 3.10+ dan [uv](https://docs.astral.sh/uv/)), dari folder hasil clone:
-
-```bash
-uv sync --frozen
-uv run jupyter lab
-```
-
-Keluaran ditulis ke `outputs/` dan tidak disimpan di repositori.
-
-### Pengaturan Crawler
-
-- `ALLOW_DATASET_FALLBACK = True` (bawaan): PDF yang gagal diunduh diambil dari `Narkotika.zip` dan dicatat sumbernya di `crawl_log.csv`.
-- `USE_RELAY = False` (bawaan): crawler mengakses situs secara langsung.
-
-### Relay
-
-Situs Direktori Putusan memblokir IP Google Colab, sehingga crawl dari Colab mendapat HTTP 403. Crawl yang sama dari jaringan rumah berhasil. Relay mengatasi ini dengan merutekan permintaan crawler melalui server milik sendiri yang IP-nya tidak diblokir:
-
-```text
-Colab ──► relay (PC/VPS sendiri) ──► putusan3.mahkamahagung.go.id
-```
-
-Notebook tetap mengatur jeda, `robots.txt`, dan retry; relay hanya meneruskan permintaan dan mengembalikan HTML/PDF asli. Untuk memakainya, jalankan relay, ubah `USE_RELAY = True`, lalu masukkan URL dan token saat diminta. Cara membuat relay ada di [docs/relay.md](docs/relay.md).
-
-### Hasil Lokal
-
-| Bagian | Hasil |
-|---|---|
-| Crawl | 50 PDF, 1.758 halaman |
-| Ekstraksi | Amar 0,998; barang bukti 0,945 |
-| TF-IDF | MAP 0,624 |
-| BM25 | MAP 0,700 |
-| BM25F | MAP 0,722; nDCG@10 0,769 |
-
-Putusan 392 adalah PDF pindai. Tanpa Tesseract di lokal teksnya kosong; Colab menjalankan OCR sehingga hasil dapat sedikit berbeda.
 
 ## Isi Overview.xlsx
 
@@ -268,7 +219,7 @@ Verifikasi ulang pada 11 November 2026 terhadap halaman detail ke-50 putusan:
 
 URL daftar yang dipakai: `https://putusan3.mahkamahagung.go.id/direktori/index/pengadilan/pn-bekasi/kategori/narkotika-dan-psikotropika-1/tahunjenis/regis/tahun/2025.html` (halaman 1 sampai 11, 20 putusan per halaman).
 
-Etika akses: halaman dibuka satu per satu dengan jeda, tanpa akses paralel. `robots.txt` situs mengizinkan `User-agent: *` dengan sinyal konten `search=yes, ai-train=no, use=reference`, sehingga dataset ini hanya dipakai sebagai rujukan akademik dan tidak dipakai untuk melatih model AI. Crawler otomatis untuk direktori yang sama tersedia pada [notebook Soal 3](#notebook-soal-3-dan-4).
+Etika akses: halaman dibuka satu per satu dengan jeda, tanpa akses paralel. `robots.txt` situs mengizinkan `User-agent: *` dengan sinyal konten `search=yes, ai-train=no, use=reference`, sehingga dataset ini hanya dipakai sebagai rujukan akademik dan tidak dipakai untuk melatih model AI. Crawler otomatis untuk direktori yang sama tersedia pada [notebook Soal 3](notebooks/README.md).
 
 ### Pembersihan Overview.xlsx
 
@@ -282,7 +233,7 @@ Etika akses: halaman dibuka satu per satu dengan jeda, tanpa akses paralel. `rob
 
 ## Kualitas Data dan Batasan
 
-- `392/Pid.Sus/2025/PN Bks` adalah PDF hasil pindai tanpa lapisan teks. Teksnya perlu OCR (notebook Soal 3 dan Soal 4 menjalankan Tesseract secara otomatis).
+- `392/Pid.Sus/2025/PN Bks` adalah PDF hasil pindai tanpa lapisan teks. Teksnya perlu OCR ([notebook Soal 3 dan 4](notebooks/README.md) menjalankan Tesseract secara otomatis).
 - Salah ketik berasal dari dokumen sumber dan dipertahankan apa adanya, misalnya `wama` (warna), `meyakinan`, atau nominal `Rp 1.000.000,000, 00`.
 - Sebagian kata menempel pada teks sumber, misalnya `TerdakwaRama` dan `beratnetto`.
 - Pidana penjara `412/Pid.Sus/2025/PN Bks` tertulis tanpa satuan ("selama 5 (lima) dan ...") sehingga kolom bulan dibiarkan kosong.
