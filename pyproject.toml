@@ -1,0 +1,15 @@
+[project]
+name = "uts-ir-narkotika"
+version = "0.1.0"
+description = "UTS Temu Kembali Informasi putusan narkotika 449 dan 486"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas", "openpyxl", "pymupdf", "requests", "curl_cffi>=0.17,<0.18",
+    "beautifulsoup4", "PySastrawi", "matplotlib",
+]
+
+[dependency-groups]
+dev = ["jupyter", "ipykernel"]
+
+[tool.uv]
+package = false
