@@ -1,3 +1,5 @@
 *.pdf binary
 *.zip binary
 *.xlsx binary
+*.wasm binary
+*.traineddata binary

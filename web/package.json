@@ -1,0 +1,32 @@
+{
+  "name": "putusan-ir-showcase",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "test:parity": "tsx tests/parity.test.ts"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "@types/d3": "^7.4.3",
+    "@types/node": "^24.19.2",
+    "svelte": "^5.57.3",
+    "svelte-check": "^4.7.7",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.6"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.1.1",
+    "d3": "^7.9.2",
+    "fflate": "^0.8.3",
+    "pdfjs-dist": "^6.5.438",
+    "sastrawijs": "^1.1.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
