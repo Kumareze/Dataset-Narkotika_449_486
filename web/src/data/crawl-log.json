@@ -1,0 +1,740 @@
+{
+ "source": "outputs/crawl/crawl_http.jsonl, curl_cffi 0.17 Chrome profile from a home connection",
+ "verified_run": {
+  "date": "2026-11-11",
+  "start_utc": "2026-11-11T10:08:49.399948+00:00",
+  "requests": [
+   {
+    "t": 0.0,
+    "kind": "listing",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/index/pengadilan/pn-bekasi/kategori/narkotika-dan-psikotropika-1/tahunjenis/regis/tahun/2025.html",
+    "status": 200,
+    "bytes": 119235
+   },
+   {
+    "t": 4.08,
+    "kind": "listing",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/index/pengadilan/pn-bekasi/kategori/narkotika-dan-psikotropika-1/tahunjenis/regis/tahun/2025/page/2.html",
+    "status": 200,
+    "bytes": 119609
+   },
+   {
+    "t": 8.11,
+    "kind": "listing",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/index/pengadilan/pn-bekasi/kategori/narkotika-dan-psikotropika-1/tahunjenis/regis/tahun/2025/page/3.html",
+    "status": 200,
+    "bytes": 119772
+   },
+   {
+    "t": 12.12,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf15595a0fe1f4a9396313132303536.html",
+    "status": 200,
+    "bytes": 68710
+   },
+   {
+    "t": 16.8,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/cde3b924ad182633baa9f6c44d8ed36f/pdf/zaf15595a0fe1f4a9396313132303536",
+    "status": 200,
+    "bytes": 480771
+   },
+   {
+    "t": 20.02,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf155931e4ab40caed9313130323538.html",
+    "status": 200,
+    "bytes": 64255
+   },
+   {
+    "t": 24.51,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/173abcaad9b6dd4713c5f698fba52967/pdf/zaf155931e4ab40caed9313130323538",
+    "status": 200,
+    "bytes": 150758
+   },
+   {
+    "t": 28.26,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf155932561c0a0aec5313130333130.html",
+    "status": 200,
+    "bytes": 64810
+   },
+   {
+    "t": 33.42,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/5794218ce315f864ecb581c59e1b29f0/pdf/zaf155932561c0a0aec5313130333130",
+    "status": 200,
+    "bytes": 359883
+   },
+   {
+    "t": 36.61,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf1559323d1769088b6313130333037.html",
+    "status": 200,
+    "bytes": 64836
+   },
+   {
+    "t": 41.15,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/9cd4aa012bf3bc9da87836c5bfc5e85d/pdf/zaf1559323d1769088b6313130333037",
+    "status": 200,
+    "bytes": 336567
+   },
+   {
+    "t": 44.56,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf15593207a2ee289a9313130333031.html",
+    "status": 200,
+    "bytes": 64739
+   },
+   {
+    "t": 48.88,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/0374f623a3fd50db00bdd047a998a78c/pdf/zaf15593207a2ee289a9313130333031",
+    "status": 200,
+    "bytes": 564058
+   },
+   {
+    "t": 52.83,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf155931caa4e96964e313130323535.html",
+    "status": 200,
+    "bytes": 64589
+   },
+   {
+    "t": 56.53,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/d0b6233d872cf6ea5ec3cbf711c16714/pdf/zaf155931caa4e96964e313130323535",
+    "status": 200,
+    "bytes": 167661
+   },
+   {
+    "t": 60.31,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ac64f5491628236313731313432.html",
+    "status": 200,
+    "bytes": 64864
+   },
+   {
+    "t": 64.87,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/4f53b22518564ca2898f30270d88bcff/pdf/zaf14ac64f5491628236313731313432",
+    "status": 200,
+    "bytes": 174031
+   },
+   {
+    "t": 68.75,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ac651d716bc8939313731313436.html",
+    "status": 200,
+    "bytes": 65394
+   },
+   {
+    "t": 73.35,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/70bb977a671e97045c45d295bc0db9f8/pdf/zaf14ac651d716bc8939313731313436",
+    "status": 200,
+    "bytes": 186464
+   },
+   {
+    "t": 77.4,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ac5a06dd118ba8c313730363438.html",
+    "status": 200,
+    "bytes": 64420
+   },
+   {
+    "t": 81.64,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/2870bdd1fbceaa6cefd393d914929ba4/pdf/zaf14ac5a06dd118ba8c313730363438",
+    "status": 200,
+    "bytes": 233331
+   },
+   {
+    "t": 85.56,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14abf5f000b5caacd313632323031.html",
+    "status": 200,
+    "bytes": 64264
+   },
+   {
+    "t": 91.31,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/6fa79e2b3432f670195f43400e03c738/pdf/zaf14abf5f000b5caacd313632323031",
+    "status": 200,
+    "bytes": 221943
+   },
+   {
+    "t": 95.18,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14abf606b5d029f71313632323034.html",
+    "status": 200,
+    "bytes": 64369
+   },
+   {
+    "t": 100.45,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/66eab2e25333170875a6f8db91140963/pdf/zaf14abf606b5d029f71313632323034",
+    "status": 200,
+    "bytes": 179608
+   },
+   {
+    "t": 104.11,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14abf63c227108839313632323039.html",
+    "status": 200,
+    "bytes": 64522
+   },
+   {
+    "t": 108.98,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/8a2e9792c6beefa03ea86e32b29526c3/pdf/zaf14abf63c227108839313632323039",
+    "status": 200,
+    "bytes": 305896
+   },
+   {
+    "t": 112.76,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab1c88e3bb0bd47313434343435.html",
+    "status": 200,
+    "bytes": 64619
+   },
+   {
+    "t": 116.8,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/eb0ea6e187b05eda05dab11d0ff53a65/pdf/zaf14ab1c88e3bb0bd47313434343435",
+    "status": 200,
+    "bytes": 324454
+   },
+   {
+    "t": 120.87,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab8b474f248a185313533343138.html",
+    "status": 200,
+    "bytes": 64635
+   },
+   {
+    "t": 125.36,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/d2563993ed72109ba3f3f9055d67f5a9/pdf/zaf14ab8b474f248a185313533343138",
+    "status": 200,
+    "bytes": 238025
+   },
+   {
+    "t": 129.37,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14abe2a317a7e97ce313631333233.html",
+    "status": 200,
+    "bytes": 65918
+   },
+   {
+    "t": 133.31,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/4ff411ea9848e73699b2a85dbdf44626/pdf/zaf14abe2a317a7e97ce313631333233",
+    "status": 200,
+    "bytes": 167155
+   },
+   {
+    "t": 136.96,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab1954e17d4b7fd313434333139.html",
+    "status": 200,
+    "bytes": 64273
+   },
+   {
+    "t": 140.7,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/e9c8a485a35b64b0c72c5cd48058eccf/pdf/zaf14ab1954e17d4b7fd313434333139",
+    "status": 200,
+    "bytes": 165778
+   },
+   {
+    "t": 144.5,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa7d687d8c98fb313335323333.html",
+    "status": 200,
+    "bytes": 65275
+   },
+   {
+    "t": 149.31,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/5c450e28e46e7af00379f486faab2107/pdf/zaf14aaa7d687d8c98fb313335323333",
+    "status": 200,
+    "bytes": 403846
+   },
+   {
+    "t": 153.37,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab193982cc29693313434333137.html",
+    "status": 200,
+    "bytes": 65287
+   },
+   {
+    "t": 157.72,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/f8aeeae5cd53c41c38bfab8b5720f9cf/pdf/zaf14ab193982cc29693313434333137",
+    "status": 200,
+    "bytes": 367730
+   },
+   {
+    "t": 161.14,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaf9248a4b6b520313432383535.html",
+    "status": 200,
+    "bytes": 66200
+   },
+   {
+    "t": 165.28,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/b622019098ac8b327d501e15f753569d/pdf/zaf14aaf9248a4b6b520313432383535",
+    "status": 200,
+    "bytes": 210872
+   },
+   {
+    "t": 169.3,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaf90f8c3a2b296313432383533.html",
+    "status": 200,
+    "bytes": 66398
+   },
+   {
+    "t": 173.86,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/eb9197a71395fecee9ff2720b649439c/pdf/zaf14aaf90f8c3a2b296313432383533",
+    "status": 200,
+    "bytes": 226212
+   },
+   {
+    "t": 177.67,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaf8f8d1ff4b855313432383531.html",
+    "status": 200,
+    "bytes": 67547
+   },
+   {
+    "t": 181.72,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/49e1817ab741f22456e79d32ef0e84f6/pdf/zaf14aaf8f8d1ff4b855313432383531",
+    "status": 200,
+    "bytes": 227127
+   },
+   {
+    "t": 185.56,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaf8cd6d23c9ae1313432383436.html",
+    "status": 200,
+    "bytes": 66833
+   },
+   {
+    "t": 190.56,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/a418f8a50bb6a44ccacc1e70804493da/pdf/zaf14aaf8cd6d23c9ae1313432383436",
+    "status": 200,
+    "bytes": 226335
+   },
+   {
+    "t": 193.99,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa54397a4c90f7313335313234.html",
+    "status": 200,
+    "bytes": 65532
+   },
+   {
+    "t": 198.58,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/9889f898cfcba15c92a8e1f1a439d239/pdf/zaf14aaa54397a4c90f7313335313234",
+    "status": 200,
+    "bytes": 344689
+   },
+   {
+    "t": 201.72,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa525ca96a8dde313335313231.html",
+    "status": 200,
+    "bytes": 65621
+   },
+   {
+    "t": 205.86,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/08b337d56b6344d85cec2187f1a0da31/pdf/zaf14aaa525ca96a8dde313335313231",
+    "status": 200,
+    "bytes": 326788
+   },
+   {
+    "t": 209.87,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab19ffc0f748584313434333337.html",
+    "status": 200,
+    "bytes": 64914
+   },
+   {
+    "t": 213.81,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/f1cefbb9198c2f641e2609327f6dadf5/pdf/zaf14ab19ffc0f748584313434333337",
+    "status": 200,
+    "bytes": 227268
+   },
+   {
+    "t": 217.77,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab19dde00dabfeb313434333334.html",
+    "status": 200,
+    "bytes": 64827
+   },
+   {
+    "t": 221.91,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/42aa822823a5d7e19941428dd5e9fc15/pdf/zaf14ab19dde00dabfeb313434333334",
+    "status": 200,
+    "bytes": 229933
+   },
+   {
+    "t": 225.61,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aa9dfa3e5b4acf1313334383038.html",
+    "status": 200,
+    "bytes": 65155
+   },
+   {
+    "t": 230.27,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/a1eba72d7140354604a5c808fc1b865b/pdf/zaf14aa9dfa3e5b4acf1313334383038",
+    "status": 200,
+    "bytes": 276366
+   },
+   {
+    "t": 233.92,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa7ec713beade6313335323335.html",
+    "status": 200,
+    "bytes": 65173
+   },
+   {
+    "t": 238.85,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/48e4408a54c0d70b403636e430ac104f/pdf/zaf14aaa7ec713beade6313335323335",
+    "status": 200,
+    "bytes": 311587
+   },
+   {
+    "t": 242.67,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab1cb0c091c8ddb313434343530.html",
+    "status": 200,
+    "bytes": 82372
+   },
+   {
+    "t": 247.49,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/7c2ed5af8d0d6d727d19764781eb0bb5/pdf/zaf14ab1cb0c091c8ddb313434343530",
+    "status": 200,
+    "bytes": 819392
+   },
+   {
+    "t": 251.13,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14abe2d02fb068ff1313631333238.html",
+    "status": 200,
+    "bytes": 64342
+   },
+   {
+    "t": 257.74,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/8d4b39a387c2da0a76a342827ae791da/pdf/zaf14abe2d02fb068ff1313631333238",
+    "status": 200,
+    "bytes": 190272
+   },
+   {
+    "t": 261.02,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14ab1a1a777e68539313434333430.html",
+    "status": 200,
+    "bytes": 64599
+   },
+   {
+    "t": 269.92,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/e386178c2894a54bd371503f473c3717/pdf/zaf14ab1a1a777e68539313434333430",
+    "status": 200,
+    "bytes": 185869
+   },
+   {
+    "t": 273.21,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaab08e6816b5f5313335333539.html",
+    "status": 200,
+    "bytes": 64658
+   },
+   {
+    "t": 281.88,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/9372203c295ffc83a8a475e9ff10ec5e/pdf/zaf14aaab08e6816b5f5313335333539",
+    "status": 200,
+    "bytes": 182515
+   },
+   {
+    "t": 285.26,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa7a59e04a9925313335323238.html",
+    "status": 200,
+    "bytes": 64992
+   },
+   {
+    "t": 294.04,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/f5f59208950ee36e097359e767b1d231/pdf/zaf14aaa7a59e04a9925313335323238",
+    "status": 200,
+    "bytes": 379146
+   },
+   {
+    "t": 297.86,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa55c49dc4a34c313335313236.html",
+    "status": 200,
+    "bytes": 64523
+   },
+   {
+    "t": 306.15,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/f91aaeb84086737909e6be10ab5e9881/pdf/zaf14aaa55c49dc4a34c313335313236",
+    "status": 200,
+    "bytes": 161534
+   },
+   {
+    "t": 310.18,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaa36711f38a9a9313335303334.html",
+    "status": 200,
+    "bytes": 65328
+   },
+   {
+    "t": 318.11,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/019e2da858c058e048251638556f80eb/pdf/zaf14aaa36711f38a9a9313335303334",
+    "status": 200,
+    "bytes": 310269
+   },
+   {
+    "t": 322.03,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aaab572e3d4a46a313335343037.html",
+    "status": 200,
+    "bytes": 65462
+   },
+   {
+    "t": 330.0,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/dbc721746f24c2b332e632a3a8fab272/pdf/zaf14aaab572e3d4a46a313335343037",
+    "status": 200,
+    "bytes": 160530
+   },
+   {
+    "t": 333.47,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aa89d45fea689fd313333393037.html",
+    "status": 200,
+    "bytes": 64252
+   },
+   {
+    "t": 342.13,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/b84a72fea9c61c11e143faa0fb92ffd1/pdf/zaf14aa89d45fea689fd313333393037",
+    "status": 200,
+    "bytes": 251510
+   },
+   {
+    "t": 346.1,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aa9b274fd1cb7f5313334363532.html",
+    "status": 200,
+    "bytes": 64978
+   },
+   {
+    "t": 354.17,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/1efa74edf3855b4308e75c3e9dbd32e3/pdf/zaf14aa9b274fd1cb7f5313334363532",
+    "status": 200,
+    "bytes": 211691
+   },
+   {
+    "t": 358.2,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14aa0343ec38c8a20313233383535.html",
+    "status": 200,
+    "bytes": 64842
+   },
+   {
+    "t": 366.52,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/60289bc22cb8a12dd7733454449a1667/pdf/zaf14aa0343ec38c8a20313233383535",
+    "status": 200,
+    "bytes": 195302
+   },
+   {
+    "t": 370.32,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9bfe81d6bcb3bf313230313338.html",
+    "status": 200,
+    "bytes": 64803
+   },
+   {
+    "t": 378.49,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/39714568bfba4f5a397c14be535d9835/pdf/zaf14a9bfe81d6bcb3bf313230313338",
+    "status": 200,
+    "bytes": 231654
+   },
+   {
+    "t": 381.88,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9a717f25f8a807313135373431.html",
+    "status": 200,
+    "bytes": 64589
+   },
+   {
+    "t": 390.53,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/23592615f81f5ea75c8e922a1095fea2/pdf/zaf14a9a717f25f8a807313135373431",
+    "status": 200,
+    "bytes": 302772
+   },
+   {
+    "t": 393.73,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9b0170bf5a86f4313230313432.html",
+    "status": 200,
+    "bytes": 64020
+   },
+   {
+    "t": 402.56,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/9028f77eecee9ff99bb0d8a907bbfcff/pdf/zaf14a9b0170bf5a86f4313230313432",
+    "status": 200,
+    "bytes": 300961
+   },
+   {
+    "t": 405.85,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a99d0998a7a9d4c313135333131.html",
+    "status": 200,
+    "bytes": 64754
+   },
+   {
+    "t": 418.85,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/b8e9f13e8d92e2bd2e46d06b409f0556/pdf/zaf14a99d0998a7a9d4c313135333131",
+    "status": 200,
+    "bytes": 11996059
+   },
+   {
+    "t": 422.75,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9a7440ef8896c7313135373436.html",
+    "status": 200,
+    "bytes": 64561
+   },
+   {
+    "t": 426.55,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/8cae3dacd76cb87fe8b41d9dbbb5e62a/pdf/zaf14a9a7440ef8896c7313135373436",
+    "status": 200,
+    "bytes": 356627
+   },
+   {
+    "t": 430.12,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9a22e844429e4c313135353239.html",
+    "status": 200,
+    "bytes": 64373
+   },
+   {
+    "t": 438.69,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/93bc533bb8454e1f92d784b2eafcd66f/pdf/zaf14a9a22e844429e4c313135353239",
+    "status": 200,
+    "bytes": 210614
+   },
+   {
+    "t": 441.82,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9a72df86a49c52313135373433.html",
+    "status": 200,
+    "bytes": 65035
+   },
+   {
+    "t": 450.6,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/993437403f720ecb330e1972a51ccebb/pdf/zaf14a9a72df86a49c52313135373433",
+    "status": 200,
+    "bytes": 184807
+   },
+   {
+    "t": 454.55,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a9a0b0093e8991b313135343439.html",
+    "status": 200,
+    "bytes": 64563
+   },
+   {
+    "t": 462.92,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/7b7b401513b4cc3351b5740a1b329798/pdf/zaf14a9a0b0093e8991b313135343439",
+    "status": 200,
+    "bytes": 372924
+   },
+   {
+    "t": 466.86,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a92cde2bdf8ac30313130333030.html",
+    "status": 200,
+    "bytes": 66451
+   },
+   {
+    "t": 475.68,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/8130a3560e71874aa586daa3c0ab9e5a/pdf/zaf14a92cde2bdf8ac30313130333030",
+    "status": 200,
+    "bytes": 211379
+   },
+   {
+    "t": 478.92,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a8ba4f955488e24313031313435.html",
+    "status": 200,
+    "bytes": 64684
+   },
+   {
+    "t": 486.84,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/9a48f392d1febccfb755a72722a85984/pdf/zaf14a8ba4f955488e24313031313435",
+    "status": 200,
+    "bytes": 618056
+   },
+   {
+    "t": 490.93,
+    "kind": "detail",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf14a8ba678f572c013313031313437.html",
+    "status": 200,
+    "bytes": 64622
+   },
+   {
+    "t": 494.14,
+    "kind": "pdf",
+    "url": "https://putusan3.mahkamahagung.go.id/direktori/download_file/03e397b4fd6d713360ef198ab652e244/pdf/zaf14a8ba678f572c013313031313437",
+    "status": 200,
+    "bytes": 617359
+   }
+  ]
+ },
+ "rate_limited_examples": [
+  {
+   "time": "2026-11-11T16:18:04.793871+00:00",
+   "kind": "detail",
+   "url": "https://putusan3.mahkamahagung.go.id/direktori/putusan/zaf15595a0fe1f4a9396313132303536.html",
+   "status": 429,
+   "next_request_after_s": 74.0,
+   "next_status": 200
+  }
+ ]
+}
