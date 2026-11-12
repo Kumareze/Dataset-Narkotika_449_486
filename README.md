@@ -21,6 +21,7 @@
 - [Sekilas](#sekilas)
 - [Anggota Kelompok](#anggota-kelompok)
 - [Struktur Repositori](#struktur-repositori)
+- [Web Showcase](#web-showcase)
 - [Mulai Cepat](#mulai-cepat)
 - [Isi Overview.xlsx](#isi-overviewxlsx)
 - [Statistik Dataset](#statistik-dataset)
@@ -63,6 +64,7 @@ Dataset-Narkotika_449_486/
 ├── Overview/
 │   └── Overview.xlsx      # Ringkasan 50 putusan (3 sheet)
 ├── notebooks/             # Notebook Soal 3 dan 4 beserta panduannya
+├── web/                   # Showcase interaktif di browser
 ├── docs/                  # Laporan Soal 1 dan panduan relay
 └── README.md
 ```
@@ -75,6 +77,15 @@ Nama file PDF diturunkan dari nomor putusan dengan mengganti `/` menjadi `_`. Co
 |---|---|
 | 1 | [docs/state_of_the_art.pdf](docs/state_of_the_art.pdf) |
 | 3 dan 4 | [notebooks/](notebooks/README.md), memakai dataset ini sebagai cadangan crawl, korpus, dan ground truth |
+
+## Web Showcase
+
+[Web showcase](web/) menyajikan sembilan tahap temu kembali informasi, dari crawl hingga evaluasi, termasuk pencarian dengan sorotan hasil pada PDF. Seluruh pemrosesan berjalan di browser pengunjung, tanpa server pemrosesan.
+
+- **Jalankan lokal** (Node.js 22): `cd web`, `npm ci`, lalu `npm run dev`.
+- **Uji paritas** dengan notebook: jalankan `uv sync` dari akar repositori untuk menyiapkan oracle Python, lalu `cd web` dan `npm run test:parity`. Saat ini pemanggilan oracle memakai Python di `.venv/Scripts/python.exe` (Windows).
+- **Deploy**: [workflow Pages](.github/workflows/pages.yml) menjalankan pemeriksaan dan build, lalu menerbitkan `web/dist` saat perubahan `web/**`, `Dataset/**`, atau workflow masuk ke `main`; tersedia juga pemicu manual. Aktifkan **Settings → Pages → Source: GitHub Actions**. Uji paritas dijalankan terpisah dari deploy.
+- **Kredit**: dataset putusan kelompok ini dari Mahkamah Agung RI; pdf.js; Tesseract.js dengan model `tessdata_fast`; serta SastrawiJs dengan kamus Kateglo berlisensi **CC-BY-NC-SA 3.0**.
 
 ## Mulai Cepat
 
